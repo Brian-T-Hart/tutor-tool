@@ -72,7 +72,7 @@ class RegisterController extends Controller
             'type' => 'tutor',
         ]);
 
-        Mail::to($data['email'])->send(new WelcomeMail($user));
+        // Mail::to($data['email'])->send(new WelcomeMail($user));
 
         return $user;
     }
